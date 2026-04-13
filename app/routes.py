@@ -1,21 +1,17 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
+from fastapi import APIRouter
+from app.models import WorkflowRequest
 
-app = FastAPI(title="AI Workflow Assistant")
+router = APIRouter()
 
-class WorkflowRequest(BaseModel):
-    goal: str
-    task_type: str
-
-@app.get("/")
+@router.get("/")
 def root():
     return {"message": "AI Workflow Assistant is running"}
 
-@app.get("/health")
+@router.get("/health")
 def health():
     return {"status": "ok"}
 
-@app.post("/plan")
+@router.post("/plan")
 def create_plan(request: WorkflowRequest):
     goal = request.goal
     task_type = request.task_type
