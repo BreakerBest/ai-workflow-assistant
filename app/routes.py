@@ -3,6 +3,7 @@ from app.models import WorkflowRequest
 from pathlib import Path
 from datetime import datetime
 import json
+import uuid
 
 router = APIRouter()
 
@@ -90,11 +91,12 @@ def create_plan(request: WorkflowRequest):
     task_type = request.task_type
 
     plan = {
-        "goal": goal,
-        "task_type": task_type,
-        "steps": generate_steps(goal, task_type),
-        "created_at": datetime.now().isoformat(),
-    }
+    "id": str(uuid.uuid4()),
+    "goal": goal,
+    "task_type": task_type,
+    "steps": generate_steps(goal, task_type),
+    "created_at": datetime.now().isoformat(),
+}
 
     save_plan(plan)
     return plan

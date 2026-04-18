@@ -54,5 +54,18 @@
       "Review weak areas and repeat"
     ],
     "created_at": "2026-04-18T16:57:07.300029"
+  },
+  {
+    "id": "4a72a5da-6751-42b6-a254-883fc18f9e4f",
+    "goal": "Pass my math test",
+    "task_type": "studying",
+    "steps": [
+      "Identify the topic you need to study: Pass my math test",
+      "Gather notes, class materials, and practice problems",
+      "Break the topic into smaller sections",
+      "Study one section at a time and test yourself",
+      "Review weak areas and repeat"
+    ],
+    "created_at": "2026-04-18T17:01:24.104457"
   }
 ]
