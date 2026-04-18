@@ -9,5 +9,50 @@
       "Complete the highest-priority task first",
       "Review and improve the result"
     ]
+  },
+  {
+    "goal": "Pass my math test",
+    "task_type": "studying",
+    "steps": [
+      "Identify the topic you need to study: Pass my math test",
+      "Gather notes, class materials, and practice problems",
+      "Break the topic into smaller sections",
+      "Study one section at a time and test yourself",
+      "Review weak areas and repeat"
+    ]
+  },
+  {
+    "goal": "Lose 20 pounds",
+    "task_type": "fitness",
+    "steps": [
+      "Set the fitness target clearly: Lose 20 pounds",
+      "Choose a workout schedule you can follow weekly",
+      "Plan meals that support the goal",
+      "Track workouts and body progress each week",
+      "Adjust based on results and consistency"
+    ]
+  },
+  {
+    "goal": "Pass my math test",
+    "task_type": "studying",
+    "steps": [
+      "Identify the topic you need to study: Pass my math test",
+      "Gather notes, class materials, and practice problems",
+      "Break the topic into smaller sections",
+      "Study one section at a time and test yourself",
+      "Review weak areas and repeat"
+    ]
+  },
+  {
+    "goal": "Pass my math test",
+    "task_type": "studying",
+    "steps": [
+      "Identify the topic you need to study: Pass my math test",
+      "Gather notes, class materials, and practice problems",
+      "Break the topic into smaller sections",
+      "Study one section at a time and test yourself",
+      "Review weak areas and repeat"
+    ],
+    "created_at": "2026-04-18T16:57:07.300029"
   }
 ]
