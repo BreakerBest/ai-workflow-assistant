@@ -30,7 +30,22 @@ def get_plans():
             return json.load(file)
         except json.JSONDecodeError:
             return []
+@router.get("/plans/{plan_id}")
+def get_plan(plan_id: str):
+    if not DATA_FILE.exists():
+        return {"error": "No plans found"}
 
+    with open(DATA_FILE, "r", encoding="utf-8") as file:
+        try:
+            plans = json.load(file)
+        except json.JSONDecodeError:
+            return {"error": "Invalid plans data"}
+
+    for plan in plans:
+        if plan.get("id") == plan_id:
+            return plan
+
+    return {"error": "Plan not found"}
 
 def generate_steps(goal: str, task_type: str):
     task_type = task_type.lower()
